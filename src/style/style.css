@@ -472,7 +472,7 @@
 
 .we-sew {
     margin-top: 125px;
-    margin-bottom: 130px;
+    margin-bottom: 341px;
 }
 
 .we-sew__header {
@@ -481,6 +481,7 @@
     align-items: center;
     margin-bottom: 80px;
 }
+
 .we-sew__title:not(:last-child) {
     margin-bottom: 73px;
 }
@@ -490,7 +491,7 @@
     max-width: 655px;
 }
 
-.we-sew__list{
+.we-sew__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 36px;
@@ -498,4 +499,73 @@
 
 .we-sew__image {
     object-fit: cover;
+}
+
+/* SHOP */
+
+.shop {
+    background-color: #1A1A1A;
+}
+
+.shop__wrapper {
+    transform: translateY(-25%);
+    max-width: 1125px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--color-light-alternate);
+    height: 853px;
+    border-radius: 15px;
+}
+
+.shop__header {
+    padding: 83px 152px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop__title:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.shop__title {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.shop__description {
+    width: 100%;
+    max-width: 570px;
+    text-align: center;
+}
+
+.shop__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.shop__list {
+    position: relative;
+}
+.shop__list:first-child .shop__image {
+    border-radius: 0 0 0 15px; /* нижний левый  */
+}
+
+.shop__list:last-child .shop__image {
+    border-radius: 0 0 15px 0; /* нижний правый */
+}
+
+.shop__image {
+    width: 100%;
+    max-width: 563px;
+    height: 472px;
+    object-fit: cover;
+}
+
+.shop__address {
+    position: absolute;
+    bottom: 10%;
+    margin-left: 31px;
+    font-style: normal;
 }
